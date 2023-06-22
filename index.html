@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles.css">
+    <!--La ruta del CSS estaba mal, le faltaba el ./ y entrar a la carpeta css. Por convención las etiqeutas link van debajo del título-->
     <title>APIs</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
     <p class="name"></p>
     <p class="blog"></p>
+    <!--Se agrega el párrafo de location para que se pueda pintar con el querySelector de app.js-->
+    <p class="location"></p>
 
-  <script src="../assets/js/app.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <!--Ruta para el js mal, no es necesario poner .. porque la carpeta de assets está en el mismo nivel que index-->
 </body>
 </html>
