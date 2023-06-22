@@ -20,7 +20,7 @@ async function displayUser(username) {
   $n.textContent = 'cargando...';
   const response = await fetch(`${usersEndpoint}/${username}`);
 
-  //console.log(data); //error, la variable data no está definida, probablemente querían llamar a la variable response. Este console.log hace que se muestre toda la información del username obtenida con el fetch en la consola.
+  //console.log(data); Error, la variable data no está definida, probablemente querían llamar a la variable response. Este console.log hace que se muestre toda la información del username obtenida con el fetch en la consola.
   console.log(response);
 
   //Se añade la variable data para convertir los elementos obtenidos de la api a json.
